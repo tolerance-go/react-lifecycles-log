@@ -11,7 +11,7 @@ Quickly debug the life cycle of the react component.
 
 # Install
 ```zsh
-npm install lifehoc -D
+npm install react-lifecycles-log -D
 ```
 
 # Usage
