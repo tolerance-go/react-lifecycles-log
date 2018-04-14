@@ -4,6 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/tolerance-go/react-lifecycles-log/badge.svg?branch=master)](https://coveralls.io/github/tolerance-go/react-lifecycles-log?branch=master)
 [![NPM downloads](http://img.shields.io/npm/dm/react-lifecycles-log.svg?style=flat)](https://npmjs.org/package/react-lifecycles-log)
 [![Dependencies Status](https://david-dm.org/tolerance-go/react-lifecycles-log/status.svg)](https://david-dm.org/tolerance-go/react-lifecycles-log)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 Quickly debug the life cycle of the react component. 
 
