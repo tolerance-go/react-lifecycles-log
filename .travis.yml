@@ -1,15 +1,22 @@
 language: node_js
-
 node_js:
-  - '8'
-
+- '8'
 install:
-  - npm install
-
+- npm install
 script:
-  - npm test
-  - npm run build
-
+- npm test
+- npm run build
 after_success:
-  - npm run coveralls
-
+- npm run coveralls
+branches:
+  only:
+  - master
+deploy:
+  provider: npm
+  email: yarnbCoder@gmail.com
+  skip_cleanup: true
+  api_key:
+    secure: fiOLRWskiECkx+43XmP51eP1uulcxRzd/ZI33Yl2L4hf3IyqtsL9yOTfl3zL9WKNn1HjMk6x/2Xw+rUQVYFd2XM8jIiux4u6E/nr+fAGK+DGv0AZAvKNm9ecDXhZby/XehQNz8hY0rXPYCNICAwggCueuPuTWtGHmPNVtyeM/qevYJahcj1ZAz6YhRopW6HqQaf3qsmPBDajSfZ4Zwa53qIlH03j1N3YiIiyra6+YpW2C1Uy2wr1LCj1z72lxb6S08M41Br6bKaUo9HXOGdQEDYzQVffu0hFfutHVYqeRtbR0UwGEbCr/WCUCCYQ+mSihtcvxQ3prDqIX05VbixF+a9lMSl8cm4KCLnykgqzDwkpXl585FAC4gsqC+G1OzmIIbH0eqSSosdJwxdMPig9j0mpZKMdsuo0e9wKIgnq7hr1jXw9zdZd4GOciRsLZdzaJhJTPEdY9NvMsOJkslCCFu3WZmKVrJ4o7qB8++I+aIxcDhO77L5kglwtpHQYwy7jgj/bIOoENV23UcFYZQSD6xzUbeedl5+bVae+6KIFqpDkXqjPrs6btj5Z+/fxFgBeXCW07b6vQLjdVaC/C+cHa/Vgrb4H8d0UJi/JpoTfbGydwHJnpNETd2vcIKKdtSiRCW+az57lU6Lt2Y4NnS38dPuojPrGZ3FWV2QfCDL+zk0=
+  on:
+    repo: tolerance-go/react-lifecycles-log
+    branch: master
