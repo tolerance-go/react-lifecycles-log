@@ -1,6 +1,6 @@
 {
   "name": "react-lifecycles-log",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Quickly debug the life cycle of the react component.",
   "repository": "https://github.com/tolerance-go/react-lifecycles-log",
   "main": "lib/index.js",
